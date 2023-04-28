@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/tailwind.css">
+    <link rel="stylesheet" href="../src/css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Travel Sense</title>
+</head>
+
+<body class="font-Montserrat dark:bg-gray-900">
+    <nav
+        class="w-full h-14 hidden bg-white lg:flex lg:fixed lg:z-10 p-4 justify-between border-b-4 border-red-400 dark:border-gray-600 dark:bg-gray-800 z-10">
+        <div class="h-auto w-auto">
+            <p class="text-xl text-primary font-black  dark:text-white">Travel Sense</p>
+        </div>
+        <div class="flex space-x-8 justify-between  dark:text-white">
+            <a href="#home" class="font-bold text-md text-primary  dark:text-white">Home</a>
+            <a href="#recomendatios" class="font-bold text-md text-primary  dark:text-white">Recomendations</a>
+            <a href="#rentas_destacadas" class="font-bold text-md text-primary  dark:text-white">Trending stays</a>
+            <a href="#faqs" class="font-bold text-md text-primary  dark:text-white">FAQ</a>
+            <a href="#us" class="font-bold text-md text-primary  dark:text-white">About us</a>
+        </div>
+        <div class="flex space-x-4  dark:text-white">
+            <a href="">
+                <i class="fa-solid fa-moon text-primary  dark:text-white"></i>
+            </a>
+            <button id="toggle-btn-nav">
+                <a href="">
+                    <i class="fa-solid fa-magnifying-glass  dark:text-white"></i>
+                </a>
+            </button>
+            <a href="user.html">
+                <i class="fa-solid fa-user  dark:text-white"></i>
+            </a>
+        </div>
+    </nav>
+    <section class="w-full h-auto">
+        <div id="home">
+            <div class="w-full h-3/4">
+                <div
+                    class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-40 justify-start">
+                    <input
+                        class="outline-none p-3 rounded-full shadow-sm transition duration-500 focus-within:shadow-sm focus:ring-2 focus:w-11/12 ease-in-out hover:scale-90 lg:hidden"
+                        placeholder="San Francisco" type="search" name="" id="">
+                    <div class="hidden h-auto lg:w-2/4 lg:flex pb-4">
+                        <p class="text-4xl ml-16 font-bold text-[#452733]">Find more locations like this</p>
+                    </div>
+                    <button title=""
+                        class="bg-white tex-xl font-semibold p-4 w-36 rounded-full text-primary shadow-sm transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-110 lg:ml-16">Explore
+                        more</button>
+                </div>
+                <div class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center ">
+                    <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="recomendations" class="w-full h-full">
+            <p class="text-3xl font-semibold text-primary dark:text-white pl-6 pt-6">Our recomendations</p>
+            <div
+                class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
+                <div class="card">
+                    <div class="w-full h-3/5 bg-switzerland bg-cover rounded-t-lg"></div>
+                    <div class="bg-secondary w-full h-2/5 shadow-lg font-Montserrat rounded-b-lg dark:bg-gray-700">
+                        <p class="text-white text-bold text-xl px-4 py-2 dark:text-white ">Switzerland</p>
+                        <p class="text-white text-md px-4">Beautiful places and landscapes</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="w-full h-3/5 bg-norway bg-cover rounded-t-lg"></div>
+                    <div class="bg-[#5396b3] w-full h-2/5 shadow-lg font-Montserrat rounded-b-lg  dark:bg-gray-800">
+                        <p class="text-white text-bold text-xl px-4 py-2 dark:text-white">Norway</p>
+                        <p class="text-white text-md px-4">Best place to visit</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="w-full h-3/5 bg-new_york bg-cover rounded-t-lg"></div>
+                    <div class="bg-[#47362c] w-full h-2/5 shadow-lg font-Montserrat rounded-b-lg  dark:bg-gray-700">
+                        <p class="text-white text-bold text-xl px-4 py-2 dark:text-white">New York</p>
+                        <p class="text-white text-md px-4">Jungle of concrete</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="w-full h-3/5 bg-seattle bg-cover rounded-t-lg"></div>
+                    <div class="bg-[#9ea89f] w-full h-2/5 shadow-lg font-Montserrat rounded-b-lg  dark:bg-gray-800">
+                        <p class="text-white text-bold text-xl px-4 py-2 dark:text-white">Seattle</p>
+                        <p class="text-white text-md px-4">City of outdoors lifestyle</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="w-full h-3/5 bg-yosemite bg-cover rounded-t-lg"></div>
+                    <div class="bg-[#a4ad1e] w-full h-2/5 shadow-lg font-Montserrat rounded-b-lg  dark:bg-gray-700">
+                        <p class="text-white text-bold text-xl px-4 py-2 dark:text-white">Yosemite National Park</p>
+                        <p class="text-white text-md px-4">California landmark</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="w-full h-3/5 bg-sydney-cut bg-cover rounded-t-lg"></div>
+                    <div class="bg-[#cfbea4] w-full h-2/5 shadow-lg font-Montserrat rounded-b-lg  dark:bg-gray-800">
+                        <p class="text-white text-bold text-xl px-4 py-2">Sydney</p>
+                        <p class="text-white text-md px-4">The emerald city</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="w-full h-3/5 bg-iceland bg-cover rounded-t-lg"></div>
+                    <div class="bg-[#c0ddef] w-full h-2/5 shadow-lg font-Montserrat rounded-b-lg  dark:bg-gray-700">
+                        <p class="text-white text-bold text-xl px-4 py-2">Iceland</p>
+                        <p class="text-white text-md px-4">Land of ice and fire</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="w-full h-3/5 bg-europe bg-cover rounded-t-lg"></div>
+                    <div class="bg-[#c8a98d] w-full h-2/5 shadow-lg font-Montserrat rounded-b-lg  dark:bg-gray-800">
+                        <p class="text-white text-bold text-xl px-4 py-2">Edinburgh</p>
+                        <p class="text-white text-md px-4">Meet the medieval castles</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="w-full h-3/5 bg-miami bg-cover rounded-t-lg"></div>
+                    <div class="bg-[#3d745f] w-full h-2/5 shadow-lg font-Montserrat rounded-b-lg  dark:bg-gray-700">
+                        <p class="text-white text-bold text-xl px-4 py-2">Miami</p>
+                        <p class="text-white text-md px-4">Beaches and sunny days!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="px-6 h-auto w-full" id="rentas_destacadas">
+            <p class="text-3xl text-primary font-semibold pb-6 mt-6 dark:text-white">
+                Trending stays
+            </p>
+            <div
+                class="sm:flex w-full h-auto sm:flex-col space-y-6 lg:space-y-0 sm:items-center sm:justify-center lg:grid lg:grid-cols-3 lg:grid-rows-3 lg:gap-4">
+                <div
+                    class="w-full h-96 bg-marriott-myrtle-beach bg-cover rounded-xl lg:col-span-3 lg:row-span-1 lg:mt-0 lg:bg-cover lg:bg-center">
+                    <p class="cardTitle">Myrtle Beach</p>
+                    <p class="text-md pl-8 mr-24">Guest room, 1 king, resort view</p>
+                </div>
+                <div class="w-full h-96 bg-bali bg-cover rounded-xl lg:row-start-2 lg:row-end-4 lg:h-full">
+                    <p class="cardTitle text-white">Bali</p>
+                    <p class="text-sm pl-8 text-white mr-24 lg:text-lg">One bedroom with private pool </p>
+                </div>
+                <div
+                    class="w-full h-96 bg-beverly-hills bg-cover rounded-xl lg:col-span-2 lg:row-span-1 lg:bg-cover lg:bg-center">
+                    <p class="cardTitle text-white">Beverly Hills</p>
+                    <p class="text-md pl-8 mr-24 text-white lg:text-lg">Superior room with balcony</p>
+                </div>
+                <div
+                    class="w-full h-96 bg-rome bg-cover rounded-xl  lg:col-start-2 lg:col-end-4 lg:bg-cover lg:bg-center">
+                    <p class="cardTitle">Rome</p>
+                    <p class="text-sm pl-8 mr-24 text-black lg:text-lg">2 beds (1 bunk bed, 1 large double) </p>
+                </div>
+            </div>
+        </div>
+        <div id="faqs" class="w-full h-full">
+            <div class="w-full h-full px-6 flex flex-col space-y-4">
+                <p class="text-3xl text-primary font-semibold mt-6  dark:text-white">Frequent questions</p>
+                <div class=" dark:text-white">
+                    <p class="text-xl font-medium text-primary  dark:text-white">How can I book?</p>
+                    <p class="text-md pt-2 ">We suggest you to make your reservation through our official website.
+                        You can also book at your trusted travel agency.
+                    </p>
+                    <p class="text-xl font-medium text-primary  dark:text-white">Are pets allowed?</p>
+                    <p>Yes, they are. No extra charges are applied.</p>
+                    <p class="text-xl font-medium text-primary  dark:text-white">Is there wifi in all hotels?</p>
+                    <p>Yes, in all our hotels you can enjoy free wifi.</p>
+                    <p class="text-xl font-medium text-primary  dark:text-white">Payment methods</p>
+                    <p>We accept: VISA, MasterCard, American Express, Paypal and Binance.</p>
+                    <p class="text-xl font-medium text-primary  dark:text-white">Cancellation policy</p>
+                    <p>For stays of less than a week it is important to notify 3 days in advance, otherwise you will be
+                        penalized.</p>
+                    <p class="text-xl font-medium text-primary  dark:text-white">How can I modify my reservation?</p>
+                    <p>To modify a reservation that you have made on our website, consult the "My Reservation" page here
+                        or contact our agents by calling 000 111 222.
+                        If the reservation has been made through a travel agency or another web page, you should contact
+                        them to request any modification through them.</p>
+                </div>
+            </div>
+        </div>
+        <footer id="us" class="w-full h-auto bg-gray-50 p-6 space-y-3 mb-16">
+            <p class="text-lg text-gray-500">About us</p>
+            <p class="text-sm text-gray-500">Terms and conditions</p>
+            <p class="text-sm text-gray-500">Policy</p>
+            <p class="text-sm text-gray-500">Work with us</p>
+            <p class="text-sm text-gray-500">Travel Sense, Inc.</p>
+            <p class="text-sm text-gray-500">Follow us</p>
+            <ul class="text-xl text-gray-300 flex space-x-2">
+                <li>
+                    <a href="https://www.linkedin.com/in/milagromartino/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </section>
+    <div id="tabBar"
+        class="w-full h-16 bg-white flex items-center justify-center space-x-10 fixed left-0 bottom-0 border-t dark:border-gray-700 shadow-md dark:bg-gray-800">
+        <a href="#home">
+            <i class="fa-solid fa-house text-xl text-gray-200"></i>
+        </a>
+        <a href="#rentas_destacadas">
+            <i class="fa-solid fa-magnifying-glass text-xl text-primary"></i>
+        </a>
+        <a href="#recomendations">
+            <i class="fa-solid fa-heart text-xl text-gray-200"></i>
+        </a>
+        <button id="toggle-btn-nav" title="">
+            <i class="fa-solid fa-moon text-xl text-gray-200"></i>
+        </button>
+        <a href="user.html">
+            <i class="fa-solid fa-user text-xl text-gray-200"></i>
+        </a>
+    </div>
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+
+        // Whenever the user explicitly chooses light mode
+        localStorage.theme = 'light'
+
+        // Whenever the user explicitly chooses dark mode
+        localStorage.theme = 'dark'
+
+        // Whenever the user explicitly chooses to respect the OS preference
+        localStorage.removeItem('theme')
+
+
+    </script>
+</body>
+
+</html>
